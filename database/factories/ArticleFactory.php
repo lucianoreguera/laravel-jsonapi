@@ -25,9 +25,9 @@ class ArticleFactory extends Factory
         return [
             'title' => $this->faker->sentence(4),
             'slug' => $this->faker->slug,
-            'context' => $this->faker->text,
-            'category_id' => Category::factory(),
-            'user_id' => User::factory(),
+            'content' => $this->faker->text,
+            // 'category_id' => Category::factory(),
+            // 'user_id' => User::factory(),
         ];
     }
 }
