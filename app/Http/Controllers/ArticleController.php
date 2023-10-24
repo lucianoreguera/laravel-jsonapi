@@ -23,7 +23,6 @@ class ArticleController extends Controller
 
     public function create(Request $request): ArticleResource
     {
-        // dd($request->input('data.attributes'));
         $article = Article::create([
             'title' => $request->input('data.attributes.title'),
             'slug' => $request->input('data.attributes.slug'),
